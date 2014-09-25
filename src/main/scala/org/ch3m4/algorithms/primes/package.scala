@@ -17,7 +17,7 @@ package object primes {
    * isPrime(2) == true
    * isPrime(22) == true
    */
-  def isPrime(n: Int) = primes.takeWhile(_ <= n).contains(n)
+  def isPrime(n: Int) = primes.takeWhile(_ <= n).last == n
 
   /*
    * Devuelve un rango de números primos
