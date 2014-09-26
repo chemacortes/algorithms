@@ -16,25 +16,26 @@ Se incluye la función `time` para cálculo de tiempos de ejecución para poder 
     	algoritmo()
     }
 
-
 ## Números primos
 
-- Secuencia infinita (<em>Stream</em>) de números primos: [primes](https://github.com/chemacortes/algorithms/blob/master/src/main/scala/org/ch3m4/algorithms/primes/package.scala)
+[package primes](https://github.com/chemacortes/algorithms/blob/master/src/main/scala/org/ch3m4/algorithms/primes/package.scala) - Secuencia infinita (<em>Stream</em>) de números primos:
 
-- Criba de Eratóstenes: [sieve](https://github.com/chemacortes/algorithms/blob/master/src/main/scala/org/ch3m4/algorithms/primes/sieve/package.scala)
+[package primes.sieve](https://github.com/chemacortes/algorithms/blob/master/src/main/scala/org/ch3m4/algorithms/primes/sieve/package.scala) - Criba de Eratóstenes:
 
 ## Sucesión de Fibonacci
-
-- [fibs](https://github.com/chemacortes/algorithms/blob/master/src/main/scala/org/ch3m4/algorithms/fibs/package.scala)
+[package fibs](https://github.com/chemacortes/algorithms/blob/master/src/main/scala/org/ch3m4/algorithms/fibs/package.scala)
 
 ## Búsqueda Binaria
-
-Búsqueda en listas ordenadas de números. La complejidad algorítmica se reduce a <em>O(log n)</em>, por lo que se emplea en numerosos algoritmos que tienen de entrada una lista ordenada.
-
-- [binarySearch](https://github.com/chemacortes/algorithms/tree/master/src/main/scala/org/ch3m4/algorithms/binarysearch)
+[package binarySearch](https://github.com/chemacortes/algorithms/tree/master/src/main/scala/org/ch3m4/algorithms/binarysearch) - Búsqueda en listas ordenadas de números. La complejidad algorítmica se reduce a <em>O(log n)</em>, por lo que se emplea en numerosos algoritmos que tienen de entrada una lista ordenada.
 
 ## Suma de tres
+[package threesum](https://github.com/chemacortes/algorithms/blob/master/src/main/scala/org/ch3m4/algorithms/threesum/package.scala) - Búsqueda dentro de una lista de tres números cuya suma sea cero. Es un algoritmo que reduce la complejidad algoritmica de <em>O(n^3)</em> a <em>O(n^2 log n)</em>.
 
-Búsqueda dentro de una lista de tres números cuya suma sea cero. Es un algoritmo que reduce la complejidad algoritmica de <em>O(n^3)</em> a <em>O(n^2 log n)</em>.
+## Función de Ackermann
+[package ackermann](https://github.com/chemacortes/algorithms/blob/master/src/main/scala/org/ch3m4/algorithms/ackermann/package.scala) -
+Esta función recursiva es conocida por crecer muy rápidamente y desbordar la pila de cálculo, incluso con valores pequeños.
 
-- [threesum](https://github.com/chemacortes/algorithms/blob/master/src/main/scala/org/ch3m4/algorithms/threesum/package.scala)
+- **ackermann**: Alias a la mejor implementación conseguida (*=ackermannMemo*)
+- **ackermannRec**: Definición recursiva
+- **ackermannPart**: Definición recursiva con algunos términos desarrollados de valores pequeños
+- **ackermannMemo**: Definición con *memonización* para evitar calcular términos ya calculados
