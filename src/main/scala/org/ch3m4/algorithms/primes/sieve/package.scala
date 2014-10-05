@@ -34,6 +34,5 @@ package object sieve {
   /*
    * Implementación para uso general
    */
-  def sieve(n: Int): List[Int] = sieveBitSet(n: Int).toList
-
+  def sieve(n: Int): List[Int] = sieveBitSet(n).toList
 }

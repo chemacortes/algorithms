@@ -35,6 +35,5 @@ package object ackermann {
     memResults.getOrElseUpdate((m, n), ackermannPart(m, n))
 
   // La mejor versión
-  def ackermann(m: BigInt, n: BigInt): BigInt = ackermannMemo(m, n)
-
+  val ackermann = ackermannMemo _
 }
