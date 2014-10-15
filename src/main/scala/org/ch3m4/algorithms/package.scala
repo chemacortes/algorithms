@@ -16,6 +16,6 @@ package object algorithms {
     val ret = f
     println("time: " + (System.nanoTime - s) / 1e6 + "ms")
     ret
-  } //> time: [A](f: => A)A
+  }
 
 }
