@@ -11,11 +11,19 @@ package object algorithms {
 	 * 		bloque
 	 * }
 	 */
-  def time[A](f: => A) = {
+
+	// Retorna tiempo de ejecución en ms
+  def time(f: => Any): Double = {
     val s = System.nanoTime
-    val ret = f
-    println("time: " + (System.nanoTime - s) / 1e6 + "ms")
-    ret
+    f
+    (System.nanoTime - s) / 1e6
   }
+
+	def timePrint[A](f: => A): A = {
+			val s = System.nanoTime
+			val ret = f
+			println("time: " + (System.nanoTime - s) / 1e6 + "ms")
+			ret
+		}
 
 }
