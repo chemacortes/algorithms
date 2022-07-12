@@ -43,6 +43,8 @@ Esta función recursiva es conocida por crecer muy rápidamente y desbordar la p
 ## Fórmula de Bailey–Borwein–Plouffe
 [package pi.bbm](https://github.com/chemacortes/algorithms/tree/master/src/main/scala/org/ch3m4/algorithms/pi/bbm) - Implementación del cálculo recursivo para calcular el número PI dígito a dígito. Para ello se utiliza la fórmula de [Bailey–Borwein–Plouffe](http://en.wikipedia.org/wiki/Bailey–Borwein–Plouffe_formula)
 
-\begin{equation*}  x_n = \left\{ 16x_{n-1} + \frac{120n^2 - 89n + 16}{512n^4-1024n^3+712n^2-206n+21}\right\} \end{equation*}
+$$
+\begin{equation*}  x_n = \left\\{ 16x_{n-1} + \frac{120n^2 - 89n + 16}{512n^4-1024n^3+712n^2-206n+21} \right\\} \end{equation*}
+$$
 
-El dígito-`n` **hexadecimal** de "`pi-3`" es dado por \begin{align} \lfloor 16 x_n \rfloor \end{align}
+El dígito-`n` **hexadecimal** de "`pi-3`" es dado por $\begin{align} \lfloor 16 x_n \rfloor \end{align}$
